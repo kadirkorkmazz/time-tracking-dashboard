@@ -6,14 +6,19 @@ body {
   background-color: hsl(226, 43%, 10%);
   width: 100%;
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .app {
   width: 100%;
   height: 100%;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 .frame {
   height: 60%;
@@ -24,7 +29,6 @@ body {
 }
 
 .personCard {
-  height: 100%;
   height: calc(100% - 20px);
   width: 30%;
   display: flex;
@@ -253,10 +257,223 @@ body {
 .attribution {
   font-size: 11px;
   text-align: center;
-  position: fixed;
-  bottom: 20px;
   color: hsl(236, 100%, 87%);
+  width: 90%;
+  position: absolute;
+  bottom: 10px;
+  height: 50px;
+  z-index: 2;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    height: 100%;
+  }
+  .frame {
+    flex-direction: column;
+    height: 90%;
+    width: 90%;
+    margin-bottom: 100px;
+  }
+  .firstRow {
+    flex-direction: column;
+  }
+  .secondRow {
+    flex-direction: column;
+  }
+
+  .personCard {
+    width: 95%;
+    height: 205px;
+    margin: 0px;
+  }
+
+  .personCardTop {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 130px;
+  }
+
+  .personImage {
+    padding: 0px;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  .personImage img {
+    height: 60px;
+  }
+
+  .personName {
+    width: 60%;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: 0.5em;
+    padding: 0px;
+  }
+
+  .reportFor {
+    font-size: 1.5em;
+  }
+  .personCardBottom {
+    align-items: center;
+    justify-content: center;
+    height: 75px;
+  }
+
+  .switchArea {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .switchArea button {
+    font-size: 0.9em;
+  }
+
+  .card {
+    height: 200px;
+  }
+
+  .cardInner {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 80%;
+    top: -20px;
+  }
+
+  .innerTop {
+    align-items: center;
+    margin: 12%;
+    margin-bottom: 3%;
+  }
+
+  .innerBottom {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+    margin: 0% 12% 12% 12%;
+  }
+  .prevHours {
+    margin: 0px;
+  }
+
+  .hours {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 800px) {
+  body {
+    height: 100%;
+  }
+  .frame {
+    flex-direction: column;
+    height: 90%;
+    width: 70%;
+    margin-bottom: 100px;
+  }
+  .firstRow {
+    flex-direction: column;
+  }
+  .secondRow {
+    flex-direction: column;
+  }
+
+  .personCard {
+    width: 95%;
+    height: 205px;
+    margin: 0px;
+  }
+
+  .personCardTop {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 130px;
+  }
+
+  .personImage {
+    padding: 0px;
+    width: 35%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-left: 30px;
+  }
+  .personImage img {
+    height: 80px;
+  }
+
+  .personName {
+    width: 65%;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: 0.7em;
+    padding: 0px;
+    margin-left: -10px;
+  }
+
+  .reportFor {
+    font-size: 1.7em;
+  }
+  .personCardBottom {
+    align-items: center;
+    justify-content: center;
+    height: 75px;
+  }
+
+  .switchArea {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .switchArea button {
+    font-size: 0.9em;
+  }
+
+  .card {
+    height: 200px;
+  }
+
+  .cardInner {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 75%;
+    top: -25px;
+  }
+
+  .innerTop {
+    align-items: center;
+    margin: 12%;
+    margin-bottom: 3%;
+  }
+
+  .innerBottom {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+    margin: 0% 12% 12% 12%;
+  }
+  .prevHours {
+    margin: 0px;
+  }
+
+  .hours {
+    font-size: 2em;
+  }
 }
