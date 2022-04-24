@@ -11,96 +11,145 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+    </style>
 
     <title>Frontend Mentor | Time tracking dashboard</title>
 
     <link rel="stylesheet" href="./src/style.css" />
   </head>
   <body>
-    Report for Jeremy Robson Daily Weekly Monthly Work 5hrs
-    <!-- daily -->
-    Previous - 7hrs
-    <!-- daily -->
-    32hrs
-    <!-- weekly -->
-    Previous - 36hrs
-    <!-- weekly -->
-    103hrs
-    <!-- monthly -->
-    Previous - 128hrs
-    <!-- monthly -->
+    <div class="app">
+      <div class="frame">
+        <div class="personCard">
+          <div class="personCardTop">
+            <div class="personImage">
+              <img src="./images/image-jeremy.png" />
+            </div>
+            <div class="personName">
+              <div class="reportFor">Report For</div>
+              <div class="name">
+                Jeremy<br />
+                Robson
+              </div>
+            </div>
+          </div>
+          <div class="personCardBottom">
+            <div class="switchArea">
+              <button class="daily">Daily</button>
+              <button class="weekly">Weekly</button>
+              <button class="monthly">Monthly</button>
+            </div>
+          </div>
+        </div>
+        <div class="stats">
+          <div class="firstRow rows">
+            <div class="work card">
+              <div class="cardImage workImage"></div>
+              <div class="cardInner">
+                <div class="innerTop">
+                  <div class="cardName">Work</div>
+                  <div class="tripleDot">
+                    <img src="./images/icon-ellipsis.svg" />
+                  </div>
+                </div>
+                <div class="innerBottom">
+                  <div class="hours">32hrs</div>
+                  <div class="prevHours">Last Week - 36 hrs</div>
+                </div>
+              </div>
+            </div>
+            <div class="play card">
+              <div class="cardImage playImage"></div>
+              <div class="cardInner">
+                <div class="innerTop">
+                  <div class="cardName">Play</div>
+                  <div class="tripleDot">
+                    <img src="./images/icon-ellipsis.svg" />
+                  </div>
+                </div>
+                <div class="innerBottom">
+                  <div class="hours">10hrs</div>
+                  <div class="prevHours">Last Week - 8 hrs</div>
+                </div>
+              </div>
+            </div>
+            <div class="study card">
+              <div class="cardImage studyImage"></div>
+              <div class="cardInner">
+                <div class="innerTop">
+                  <div class="cardName">Study</div>
+                  <div class="tripleDot">
+                    <img src="./images/icon-ellipsis.svg" />
+                  </div>
+                </div>
+                <div class="innerBottom">
+                  <div class="hours">4hrs</div>
+                  <div class="prevHours">Last Week - 7 hrs</div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-    Play 1hr
-    <!-- daily -->
-    Previous - 2hrs
-    <!-- daily -->
-    10hrs
-    <!-- weekly -->
-    Previous - 8hrs
-    <!-- weekly -->
-    23hrs
-    <!-- monthly -->
-    Previous - 29hrs
-    <!-- monthly -->
-
-    Study 0hrs
-    <!-- daily -->
-    Previous - 1hr
-    <!-- daily -->
-    4hrs
-    <!-- weekly -->
-    Previous - 7hrs
-    <!-- weekly -->
-    13hrs
-    <!-- monthly -->
-    Previous - 19hrs
-    <!-- monthly -->
-
-    Exercise 1hr
-    <!-- daily -->
-    Previous - 1hr
-    <!-- daily -->
-    4hrs
-    <!-- weekly -->
-    Previous - 5hrs
-    <!-- weekly -->
-    11hrs
-    <!-- monthly -->
-    Previous - 18hrs
-    <!-- monthly -->
-
-    Social 1hr
-    <!-- daily -->
-    Previous - 3hrs
-    <!-- daily -->
-    5hrs
-    <!-- weekly -->
-    Previous - 10hrs
-    <!-- weekly -->
-    21hrs
-    <!-- monthly -->
-    Previous - 23hrs
-    <!-- monthly -->
-
-    Self Care 0hrs
-    <!-- daily -->
-    Previous - 1hr
-    <!-- daily -->
-    2hrs
-    <!-- weekly -->
-    Previous - 2hrs
-    <!-- weekly -->
-    7hrs
-    <!-- monthly -->
-    Previous - 11hrs
-    <!-- monthly -->
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+          <div class="secondRow rows">
+            <div class="exercise card">
+              <div class="cardImage exerciseImage"></div>
+              <div class="cardInner">
+                <div class="innerTop">
+                  <div class="cardName">Exercise</div>
+                  <div class="tripleDot">
+                    <img src="./images/icon-ellipsis.svg" />
+                  </div>
+                </div>
+                <div class="innerBottom">
+                  <div class="hours">4hrs</div>
+                  <div class="prevHours">Last Week - 5 hrs</div>
+                </div>
+              </div>
+            </div>
+            <div class="social card">
+              <div class="cardImage socialImage"></div>
+              <div class="cardInner">
+                <div class="innerTop">
+                  <div class="cardName">Social</div>
+                  <div class="tripleDot">
+                    <img src="./images/icon-ellipsis.svg" />
+                  </div>
+                </div>
+                <div class="innerBottom">
+                  <div class="hours">5hrs</div>
+                  <div class="prevHours">Last Week - 10 hrs</div>
+                </div>
+              </div>
+            </div>
+            <div class="selfCare card">
+              <div class="cardImage selfCareImage"></div>
+              <div class="cardInner">
+                <div class="innerTop">
+                  <div class="cardName">Self Care</div>
+                  <div class="tripleDot">
+                    <img src="./images/icon-ellipsis.svg" />
+                  </div>
+                </div>
+                <div class="innerBottom">
+                  <div class="hours">2hrs</div>
+                  <div class="prevHours">Last Week - 2 hrs</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/kadirkorkmazz">Kadir Korkmaz</a>.
+      </div>
     </div>
+
     <script src="./src/script.js"></script>
   </body>
 </html>

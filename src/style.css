@@ -1,6 +1,261 @@
+* {
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+}
+body {
+  background-color: hsl(226, 43%, 10%);
+  width: 100%;
+  height: 100vh;
+}
+.app {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.frame {
+  height: 60%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.personCard {
+  height: 100%;
+  height: calc(100% - 20px);
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px 0 5px 10px;
+}
+
+.personCardTop {
+  height: 70%;
+  width: 100%;
+  background-color: hsl(246, 80%, 60%);
+  border-radius: 15px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.personImage {
+  height: 70%;
+  padding: 12% 0 0 10%;
+}
+
+.personImage img {
+  height: 85px;
+  border-radius: 50%;
+  border: 4px solid white;
+}
+
+.personName {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 0 0 10%;
+  color: white;
+  font-weight: 300;
+}
+
+.reportFor {
+  font-size: 0.75em;
+  color: hsl(236, 100%, 87%);
+}
+
+.name {
+  font-size: 2.3em;
+}
+
+.personCardBottom {
+  height: 30%;
+  background-color: hsl(235, 46%, 20%);
+  width: 100%;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  position: relative;
+  top: -15px;
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.switchArea button {
+  background-color: transparent;
+  color: hsl(235, 45%, 61%);
+  border: 0;
+  font-weight: 300;
+}
+
+.switchArea button:hover {
+  color: white;
+}
+
+.switchArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 80%;
+  height: 75%;
+}
+
+.stats {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.rows {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.secondRow {
+  padding-top: 0px;
+}
+.card {
+  width: 100%;
+  height: 100%;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cardImage {
+  height: 25%;
+  width: 100%;
+  background-color: darkred;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.cardInner {
+  background-color: hsl(235, 46%, 20%);
+  width: 100%;
+  height: 80%;
+  border-radius: 15px;
+  z-index: 1;
+  position: relative;
+  top: -15px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.cardInner:hover {
+  background-color: hsl(235, 45%, 61%);
+}
+
+.innerTop {
+  height: 20%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 10%;
+  margin-top: 10%;
+}
+
+.tripleDot {
+  display: flex;
+  align-items: center;
+}
+
+.tripleDot img {
+  height: 5px;
+}
+
+.tripleDot img:hover {
+  color: red;
+}
+
+.innerBottom {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  margin-left: 10%;
+  margin-top: -5%;
+}
+
+.hours {
+  font-size: 3em;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+.prevHours {
+  font-size: 0.75em;
+  margin-top: -5%;
+  color: hsl(236, 100%, 87%);
+}
+
+.workImage {
+  background-image: url(../images/icon-work.svg);
+  background-color: hsl(15, 100%, 70%);
+  background-repeat: no-repeat;
+  background-position: 90% 70%;
+}
+
+.playImage {
+  background-image: url(../images/icon-play.svg);
+  background-color: hsl(195, 74%, 62%);
+  background-repeat: no-repeat;
+  background-position: 90% 70%;
+}
+
+.studyImage {
+  background-image: url(../images/icon-study.svg);
+  background-color: hsl(348, 100%, 68%);
+  background-repeat: no-repeat;
+  background-position: 90% 70%;
+}
+
+.exerciseImage {
+  background-image: url(../images/icon-exercise.svg);
+  background-color: hsl(145, 58%, 55%);
+  background-repeat: no-repeat;
+  background-position: 90% 70%;
+}
+
+.socialImage {
+  background-image: url(../images/icon-social.svg);
+  background-color: hsl(264, 64%, 52%);
+  background-repeat: no-repeat;
+  background-position: 90% 70%;
+}
+
+.selfCareImage {
+  background-image: url(../images/icon-self-care.svg);
+  background-color: hsl(43, 84%, 65%);
+  background-repeat: no-repeat;
+  background-position: 90% 70%;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
+  position: fixed;
+  bottom: 20px;
+  color: hsl(236, 100%, 87%);
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
