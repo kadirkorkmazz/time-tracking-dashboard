@@ -101,7 +101,8 @@ body {
 }
 
 .switchArea button:hover {
-  color: white;
+  color: white !important;
+  cursor: pointer;
 }
 
 .switchArea {
@@ -186,10 +187,6 @@ body {
   height: 5px;
 }
 
-.tripleDot img:hover {
-  color: red;
-}
-
 .innerBottom {
   width: 100%;
   height: 100%;
@@ -266,6 +263,10 @@ body {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+.active {
+  background-color: red;
 }
 
 @media screen and (max-width: 400px) {
