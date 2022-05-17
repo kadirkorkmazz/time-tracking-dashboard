@@ -1,4 +1,6 @@
 # Frontend Mentor - Time tracking dashboard solution
+## 🔴Live: [You can view the project here](https://time-tracking-dashboard-kdr.vercel.app/)
+
 
 ![Design preview for the Time tracking dashboard coding challenge](./design/desktop-preview.jpg)
 
